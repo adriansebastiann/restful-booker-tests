@@ -5,7 +5,7 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-  workflow_dispatch:   # permite rularea manuală din GitHub
+  workflow_dispatch:
 
 jobs:
   test:
@@ -29,11 +29,11 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Run tests (smoke)
-        run: ./mvnw clean test -Dsuite=smoke -Denv=local
+        run: mvn clean test -Dsuite=smoke -Denv=local
 
       - name: Generate Allure report
         if: always()
-        run: ./mvnw allure:report
+        run: mvn allure:report
 
       - name: Deploy report to GitHub Pages
         if: always()
