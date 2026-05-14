@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite" parallel="classes" thread-count="3">
+    <test name="Smoke Tests">
+        <classes>
+            <class name="com.restfulbooker.tests.health.PingTest"/>
+            <class name="com.restfulbooker.tests.auth.AuthTest"/>
+            <class name="com.restfulbooker.tests.booking.CreateBookingTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite" parallel="classes" thread-count="4">
+    <test name="All Tests">
+        <packages>
+            <package name="com.restfulbooker.tests.*"/>
+        </packages>
+    </test>
+</suite>
