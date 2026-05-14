@@ -12,6 +12,13 @@ public class BookingClient extends BaseClient {
                 .then().statusCode(200).extract().as(BookingResponse.class);
     }
 
+    public Response createBookingRaw(Booking booking) {
+        return given()
+                .body(booking)
+                .when()
+                .post(Endpoints.BOOKING);
+    }
+
     public Booking getBooking(int id) {
         return given()
                 .when().get(Endpoints.BOOKING + "/" + id)
