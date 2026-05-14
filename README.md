@@ -53,6 +53,6 @@ src/test/java/com/restfulbooker/
 - Maven
 
 ### Run tests
-
+Report here: https://adriansebastiann.github.io/restful-booker-tests/reports/
 ```bash
 mvn clean test -Dsuite=smoke -Denv=local

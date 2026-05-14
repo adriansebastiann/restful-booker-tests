@@ -34,7 +34,7 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Run tests (smoke)
-        run: mvn clean test -Dsuite=smoke -Denv=local
+        run: mvn clean test -Dsuite=regression -Denv=local
 
       - name: Generate Allure report
         if: always()
