@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu May 14 15:51:46 UTC 2026","Thu May 14 15:51:46 UTC 2026","371","Smoke Suite","Smoke Tests","com.restfulbooker.tests.booking.CreateBookingTest","com.restfulbooker.tests.booking.CreateBookingTest","testCreateValidBooking","Create a valid booking","Creates a booking with valid data and checks the response"
+"passed","Thu May 14 15:51:46 UTC 2026","Thu May 14 15:51:46 UTC 2026","63","Smoke Suite","Smoke Tests","com.restfulbooker.tests.auth.AuthTest","com.restfulbooker.tests.auth.AuthTest","testSuccessfulAuthentication","Valid authentication","Verify that a valid token is returned for correct credentials"
+"passed","Thu May 14 15:51:46 UTC 2026","Thu May 14 15:51:46 UTC 2026","346","Smoke Suite","Smoke Tests","com.restfulbooker.tests.health.PingTest","com.restfulbooker.tests.health.PingTest","healthCheck","Health check",""
